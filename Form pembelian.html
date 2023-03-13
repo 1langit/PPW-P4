@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembelian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #fff;
+			border-radius: 5px;
+            background-color: #ff793f;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .common {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .uncommon {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="number"] {
+            width: 50px;
+            text-align: center;
+        }
+        button[type="submit"] {
+            padding: 10px;
+            background-color: #302F79;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        .tit {
+            color: #fff;
+        }
+    </style>
+</head>
+<body bgcolor="302F79">
+    <p align="center">
+        <img src="Screenshot 2023-03-13 165905.png" width="40%">
+    </p>
+    <br>
+    <h1 align="center" class="tit">FORMULIR PEMBELIAN</h1>
+    <br>
+    <form bgcolor="#fff">
+        <p align="center">
+            <img src="box.jpg" width="200" height="150" align="middle">
+            <br><br>
+            Barang ini
+            <hr color="#fff">
+        </p>
+        <p align="center">
+            Jumlah
+            <input type="number" name="jumlah" value="1" min="1" max="9" class="common">
+        </p>
+    </form>
+    <br>
+    <form action="@" method="send" enctype="text/plain">
+        <label for="nama">Nama</label>
+        <br>
+        <input type="text" id="nama" name="nama" placeholder="Nama anda" class="common">
+        <br><br>
+
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="anda@gmail.com" class="common">
+        <br><br>
+
+        <label for="telp">Telpon</label>
+        <br>
+        <input type="text" id="telp" name="negara" placeholder="+62" size="1" class="uncommon">
+        <input type="text" id="telp" name="nomor" placeholder="1234567890" class="uncommon">
+        <br><br><br>
+
+        <label for="alamat">Alamat</label>
+        <br>
+        <textarea id="alamat" name="alamat" rows="3" placeholder="Jl raya no 16 Yogyakarta" required class="common"></textarea>
+        <br><br>
+
+        <label for="kirim">Pengiriman</label>
+        <br>
+        <input type="radio" name="kirim" value="reguler" id="kirim">
+        Reguler
+        <br>
+        <input type="radio" name="kirim" value="ekspres" id="kirim">
+        Ekspres
+        <br><br><br>
+
+        <label for="bayar">Pembayaran</label>
+        <br>
+        <select name="pembayaran" class="common">
+            <option value="null" disabled selected hidden>--Pilih metode--</option>
+            <option value="VA">Virtual account</option>
+            <option value="COD">Cash on delivery</option>
+            <option value="Pyl">Paylater</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox" name="asuransi" value="asuransi" id="asuransi">
+        Asuransi pengiriman
+        <br><br><br>
+
+        <button type="submit">Beli sekarang</button>
+    </form>
+
+</body>
+</html>

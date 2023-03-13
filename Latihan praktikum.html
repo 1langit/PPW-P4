@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPW P4</title>
+</head>
+<body>
+    <form>
+        <p>Username</p>
+        <input type="text" name="username">
+        <p>password</p>
+        <input type="password" name="password">
+    </form>
+    <br><br><br>
+
+    <form>
+        <input type="checkbox" name="sepeda">
+        <br>
+        <p>
+            saya memiliki sebuah mobil
+            <input type="checkbox" name="mobil" value="on">
+        </p>
+        <br><br>
+        jenis kelamin
+        <br>
+        pria:
+        <input type="radio" name="sex" value="pria" checked>
+        <br>
+        wanita:
+        <input type="radio" name="sex" value="wanita">
+    </form>
+    <br><br><br>
+
+    <form>
+        <select name="mobil">
+            <option value="volvo" disabled selected value>choose</option>
+            <option value="volvo">volvo</option>
+            <option value="peugeot">peugeot</option>
+            <option value="fiat">fiat</option>
+            <option value="jaguar">jaguar</option>
+        </select>
+    </form>
+    <br><br><br>
+
+    <form>
+        <select name="mobil">
+            <option value="null" disabled selected hidden>choose</option>
+            <option value="volvo">volvo</option>
+            <option value="peugeot">peugeot</option>
+            <option value="fiat">fiat</option>
+            <option value="jaguar">jaguar</option>
+        </select>
+    </form>
+    <br><br><br>
+
+    <fieldset>
+        <legend align="center">
+            informasi kesehatan:
+        </legend>
+        <form>
+            Berat <input type="text" size="3">
+            Tinggi <input type="text" size="20">
+            <br><br>
+            <input type="button" value="Ok">
+        </form>
+    </fieldset>
+    <br><br><br>
+
+    <form action="" method="post" enctype="text/plain">
+        <h3>Form ini mengirim email</h3>
+        Nama <br>
+        <input type="text" name="nama" value="Nama anda" size="20" maxlength="20">
+        <br>
+        Mail <br>
+        <input type="text" name="mail" placeholder="Email anda" size="20">
+        <br>
+        Komentar <br>
+        <textarea type="text" name="komentar" rows="4" cols="50">Komentar anda</textarea>
+        <br>
+        Tambahan <br>
+        <input type="text" name="tambahan" value="Apa yang ingin anda tambahkan" size="40" readonly>
+        <br><br>
+        <input type="submit" value="send">
+        <input type="reset" value="reset">
+    </form>
+    <br><br><br>
+
+    <h3>Lihat, ada gambar</h3>
+    <p>
+        Gambar dari folder lokal 
+        <img src="Gambar1.jpg" width="400" height="200">
+    </p>
+    <p>
+        Gambar dari folder lain 
+        <img src="../image/Gif1.gif">
+    </p>
+    <p>
+        Gambar dari situs lain 
+        <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" width="250" height="150">
+    </p>
+    <br><br><br>
+
+    <p>
+        Sebuah gambar 
+        <img src="Gambar1.jpg" align="bottom" width="200" height="100">
+        di antara teks.
+    </p>
+    <p>
+        Sebuah gambar 
+        <img src="Gambar1.jpg" align="middle" width="200" height="100">
+        di antara teks.
+    </p>
+    <p>
+        Sebuah gambar 
+        <img src="Gambar1.jpg" align="top" width="200" height="100">
+        di antara teks.
+    </p>
+    <p>
+        Pengaturan default adalah "buttom"
+    </p>
+    <p>
+        Sebuah gambar 
+        <img src="Gambar1.jpg" width="200" height="100">
+        di antara teks.
+    </p>
+    <p>
+        <img src="Gambar1.jpg" width="200" height="100">
+        Sebuah gambar di depan teks.
+    </p>
+    <p>
+        Sebuah gambar di belakang teks.
+        <img src="Gambar1.jpg" width="200" height="100">
+    </p>
+    <br><br><br>
+</body>
+</html>
